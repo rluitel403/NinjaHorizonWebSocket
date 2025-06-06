@@ -1,0 +1,29 @@
+{
+  "name": "ninja-horizon-websocket",
+  "version": "1.0.0",
+  "description": "WebSocket server for Ninja Horizon game",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node server.ts",
+    "postinstall": "npm run build"
+  },
+  "keywords": ["websocket", "game", "server", "typescript", "multiplayer"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.14.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/ws": "^8.5.8",
+    "@types/uuid": "^9.0.5",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 
